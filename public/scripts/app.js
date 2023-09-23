@@ -4,7 +4,7 @@ function onSubmit(e) {
     if(prompt.value === '') {
         prompt.placeholder = "Question Please!"
     } else {
-        GetAns(prompt.value)
+        GetAns(prompt.value+" answer sarcastically but right!")
     }
 }
 
@@ -21,7 +21,7 @@ async function GetAns(question) {
             body: test,
         })
         if(!response.ok) {
-            throw new Error('Error')
+            throw new Error('Go ask your questions somewhere else!')
         }
         const answer = await response.json();
         const content = document.querySelector('#final');
