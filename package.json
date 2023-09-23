@@ -1,0 +1,22 @@
+{
+  "name": "answer-with-a-pinch-of-salt",
+  "version": "1.0.0",
+  "description": "This innovative Q&A platform brings a touch of humor to your inquiries, serving up sarcastic responses that will have you in stitches. Whether you're looking for a clever answer to life's everyday problems or just need a laugh, This site has got you covered. So why settle for a boring, straightforward answer when you can have a witty one with a Pinch of Salt? Seriously, I'm Kidding!",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "node": "^20.6.0",
+    "nodemon": "^2.0.20",
+    "openai": "^3.1.0"
+  }
+}
