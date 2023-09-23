@@ -4,7 +4,7 @@ function onSubmit(e) {
     if(prompt.value === '') {
         prompt.placeholder = "Question Please!"
     } else {
-        GetAns(prompt.value+". You are a legal advisor for a child, Answer mindfully! If the question asked is not related to Laws or Rights. Answer - The asked question in not related.")
+        GetAns(prompt.value)
     }
 }
 
