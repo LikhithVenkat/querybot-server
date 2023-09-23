@@ -4,7 +4,7 @@ function onSubmit(e) {
     if(prompt.value === '') {
         prompt.placeholder = "Question Please!"
     } else {
-        GetAns(prompt.value+" answer sarcastically but right!")
+        GetAns(prompt.value+". You are a legal advisor for a child, Answer mindfully! If the question asked is not related to Laws or Rights. Answer - The asked question in not related.")
     }
 }
 
@@ -21,7 +21,7 @@ async function GetAns(question) {
             body: test,
         })
         if(!response.ok) {
-            throw new Error('Go ask your questions somewhere else!')
+            throw new Error('Error')
         }
         const answer = await response.json();
         const content = document.querySelector('#final');
